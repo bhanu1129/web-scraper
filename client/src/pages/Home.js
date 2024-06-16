@@ -25,7 +25,7 @@ const Home = () => {
 
   const fetchCompanies = async () => {
     try {
-      const response = await fetch("https://web-scraper-backend-b77m.onrender.com/api/companies");
+      const response = await fetch("https://web-scraper-server.vercel.app/api/companies");
       const data = await response.json();
       setCompanies(data.reverse());
       setLoading(false);
@@ -66,7 +66,7 @@ const Home = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        "https://web-scraper-backend-b77m.onrender.com/api/companies/delete",
+        "https://web-scraper-server.vercel.app/api/companies/delete",
         {
           method: "DELETE",
           headers: {

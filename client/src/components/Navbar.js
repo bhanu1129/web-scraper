@@ -10,7 +10,7 @@ const Navbar = ({ onScrapeSuccess }) => {
     setLoading(true);
     setMessage("");
     try {
-      const response = await fetch("https://web-scraper-backend-b77m.onrender.com/scrape", {
+      const response = await fetch("https://web-scraper-server.vercel.app/scrape", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

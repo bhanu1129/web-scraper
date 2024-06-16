@@ -22,7 +22,7 @@ const CompanyDetails = () => {
     const fetchCompany = async () => {
       try {
         const response = await fetch(
-          `https://web-scraper-backend-b77m.onrender.com/api/companies/${id}`
+          `https://web-scraper-server.vercel.app/api/companies/${id}`
         );
         const data = await response.json();
         setCompany(data);
